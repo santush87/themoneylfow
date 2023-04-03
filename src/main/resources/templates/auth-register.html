@@ -13,7 +13,7 @@
 
 <div class="container">
 
-    <h2 class="text-center text-white">Register User</h2>
+    <h2 class="text-center text-dark">Register User</h2>
 
     <form th:method="POST"
           th:action="@{/users/register}"
@@ -79,22 +79,23 @@
                        class="text-white font-weight-bold">
                     Gender
                 </label>
-
-                <select class="form-group col-md-6 mb-3"
-                        name="gender"
-                        th:field="*{gender}"
-                        id="gender">
-                    <option value="">- Select gender -</option>
-                    <option th:each="g : ${T(bg.martin_aleksandrov.themoneylfow.domain.enums.Gender).values()}"
-                            th:text="${g}"
-                            th:value="${g}"
-                            th:selected="${g} == *{gender}">
-                    </option>
-                </select>
-                <p th:if="${#fields.hasErrors('gender')}"
-                   class="errors alert alert-danger">
-                    Choose gender.
-                </p>
+                <div>
+                    <select class="form-group col-md-12 mb-5"
+                            name="gender"
+                            th:field="*{gender}"
+                            id="gender">
+                        <option value="">- Select gender -</option>
+                        <option th:each="g : ${T(bg.martin_aleksandrov.themoneylfow.domain.enums.Gender).values()}"
+                                th:text="${g}"
+                                th:value="${g}"
+                                th:selected="${g} == *{gender}">
+                        </option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('gender')}"
+                       class="errors alert alert-danger">
+                        Choose gender.
+                    </p>
+                </div>
             </div>
         </div>
 
