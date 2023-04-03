@@ -2,7 +2,6 @@ package bg.martin_aleksandrov.themoneylfow.config;
 
 import bg.martin_aleksandrov.themoneylfow.repositories.UserRepository;
 import bg.martin_aleksandrov.themoneylfow.services.ApplicationUserDetailsService;
-//import org.springframework.boot.autoconfigure.security.reactive.PathRequest;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,9 +35,9 @@ public class SecurityConfiguration {
                 // configure login with HTML form
                         formLogin().
                 loginPage("/users/login").
-                // the names of the user name, password input fields in the custom login form
-                        usernameParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_USERNAME_KEY).
-                passwordParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_PASSWORD_KEY).
+                // the names of the username, password input fields in the custom login form
+                    usernameParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_USERNAME_KEY).
+                    passwordParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_PASSWORD_KEY).
                 // where do we go after login
                         defaultSuccessUrl("/").//use true argument if you always want to go there, otherwise go to previous page
                 failureForwardUrl("/users/login-error").
