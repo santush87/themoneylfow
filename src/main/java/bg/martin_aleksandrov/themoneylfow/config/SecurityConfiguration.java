@@ -1,5 +1,6 @@
 package bg.martin_aleksandrov.themoneylfow.config;
 
+import bg.martin_aleksandrov.themoneylfow.domain.enums.UserRoleEnum;
 import bg.martin_aleksandrov.themoneylfow.repositories.UserRepository;
 import bg.martin_aleksandrov.themoneylfow.services.ApplicationUserDetailsService;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
@@ -30,6 +31,8 @@ public class SecurityConfiguration {
 //                requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll().
                 // the URL-s below are available for all users - logged in and anonymous
                         requestMatchers("/", "/users/login", "/users/register", "/users/login-error").permitAll().
+                // allow just for admins
+                        requestMatchers("/admin").hasRole(UserRoleEnum.ADMIN.name()).
                 anyRequest().authenticated().
                 and().
                 // configure login with HTML form
