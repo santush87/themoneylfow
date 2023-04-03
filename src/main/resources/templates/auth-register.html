@@ -80,7 +80,7 @@
                     Gender
                 </label>
 
-                <select class="form-group"
+                <select class="form-group col-md-6 mb-3"
                         name="gender"
                         th:field="*{gender}"
                         id="gender">
@@ -90,12 +90,11 @@
                             th:value="${g}"
                             th:selected="${g} == *{gender}">
                     </option>
-
-                    <p th:if="${#fields.hasErrors('gender')}"
-                       class="errors alert alert-danger">
-                        Choose gender.
-                    </p>
                 </select>
+                <p th:if="${#fields.hasErrors('gender')}"
+                   class="errors alert alert-danger">
+                    Choose gender.
+                </p>
             </div>
         </div>
 
