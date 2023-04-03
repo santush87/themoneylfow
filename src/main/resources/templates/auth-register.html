@@ -81,14 +81,20 @@
                 </label>
 
                 <select class="form-group"
+                        name="gender"
                         th:field="*{gender}"
                         id="gender">
-                    <option th:value="${MALE}">MALE</option>
-                    <option th:value="${FEMALE}">FEMALE</option>
-<!--                    <p th:if="${#fields.hasErrors('gender')}"-->
-<!--                       class="errors alert alert-danger">-->
-<!--                        Choose gender.-->
-<!--                    </p>-->
+                    <option value="">- Select gender -</option>
+                    <option th:each="g : ${T(bg.martin_aleksandrov.themoneylfow.domain.enums.Gender).values()}"
+                            th:text="${g}"
+                            th:value="${g}"
+                            th:selected="${g} == *{gender}">
+                    </option>
+
+                    <p th:if="${#fields.hasErrors('gender')}"
+                       class="errors alert alert-danger">
+                        Choose gender.
+                    </p>
                 </select>
             </div>
         </div>
