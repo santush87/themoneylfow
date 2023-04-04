@@ -5,6 +5,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    min-height: 100vh;
+}
+
+.sticky-footer{
+    position: sticky;
+    top: 100%;
 }
 
 .index-body {
