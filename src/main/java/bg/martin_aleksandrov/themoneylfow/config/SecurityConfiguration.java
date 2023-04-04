@@ -36,21 +36,28 @@ public class SecurityConfiguration {
                 anyRequest().authenticated().
                 and().
                 // configure login with HTML form
-                        formLogin().
-                loginPage("/users/login").
+                    formLogin().
+                        loginPage("/users/login").
                 // the names of the username, password input fields in the custom login form
                     usernameParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_USERNAME_KEY).
                     passwordParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_PASSWORD_KEY).
                 // where do we go after login
-                        defaultSuccessUrl("/").//use true argument if you always want to go there, otherwise go to previous page
-                failureForwardUrl("/users/login-error").
-                and().logout().//configure logout
-                logoutUrl("/users/logout").
-                logoutSuccessUrl("/").//go to homepage after logout
-                invalidateHttpSession(true).
+                    defaultSuccessUrl("/").//use true argument if you always want to go there, otherwise go to previous page
+                    failureForwardUrl("/users/login-error").
                 and().
-                securityContext().
-                securityContextRepository(securityContextRepository);
+                    logout().//configure logout
+                        logoutUrl("/users/logout").
+                        logoutSuccessUrl("/").//go to homepage after logout
+                        invalidateHttpSession(true).
+//                and().
+//                    rememberMe().
+//                        rememberMeParameter("remember").
+//                        key("remember Me Encryption Key").
+//                        rememberMeCookieName("rememberMeCookieName").
+//                        tokenValiditySeconds(10000).
+                and().
+                    securityContext().
+                    securityContextRepository(securityContextRepository);
 
         return http.build();
     }
