@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://img.freepik.com/free-vector/investor-with-laptop-monitoring-growth-dividends-trader-sitting-stack-money-investing-capital-analyzing-profit-graphs-vector-illustration-finance-stock-trading-investment_74855-8432.jpg?w=1060&t=st=1679497063~exp=1679497663~hmac=ee69b833383fdc28ddd8e692e6beeed18eb44e7f95b24dbb022462f8fcab2a01');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://img.freepik.com/free-vector/investor-with-laptop-monitoring-growth-dividends-trader-sitting-stack-money-investing-capital-analyzing-profit-graphs-vector-illustration-finance-stock-trading-investment_74855-8432.jpg?w=1060&t=st=1679497063~exp=1679497663~hmac=ee69b833383fdc28ddd8e692e6beeed18eb44e7f95b24dbb022462f8fcab2a01');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,7 +18,7 @@ body {
 }
 
 .index-body {
-    background-image: url('https://img.freepik.com/free-photo/pointing-black-background-transparent-falling-hourglass_1134-1269.jpg?w=900&t=st=1679495685~exp=1679496285~hmac=1eab3045e8bf0e056b2bc14b3cf4a5a76133939ae77b579f75e794d2bafa42d4');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/pointing-black-background-transparent-falling-hourglass_1134-1269.jpg?w=900&t=st=1679495685~exp=1679496285~hmac=1eab3045e8bf0e056b2bc14b3cf4a5a76133939ae77b579f75e794d2bafa42d4');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -93,110 +93,7 @@ form.main-form {
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/cherryswash/v18/i7dNIFByZjaNAMxtZcnfAy5MR3K_.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 }
 
-/*navigation*/
-/*nav {*/
-/*    margin: 27px auto 0;*/
-
-/*    position: relative;*/
-/*    width: 590px;*/
-/*    height: 50px;*/
-/*    background-color: #34495e;*/
-/*    border-radius: 8px;*/
-/*    font-size: 0;*/
-/*}*/
-/*nav a {*/
-/*    line-height: 50px;*/
-/*    height: 100%;*/
-/*    font-size: 35px;*/
-/*    display: inline-block;*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*    text-decoration: none;*/
-/*    text-transform: uppercase;*/
-/*    text-align: center;*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*}*/
-/*nav .animation {*/
-/*    position: absolute;*/
-/*    height: 100%;*/
-/*    top: 0;*/
-/*    z-index: 0;*/
-/*    transition: all .5s ease 0s;*/
-/*    border-radius: 8px;*/
-/*}*/
-/*a:nth-child(1) {*/
-/*    width: 100px;*/
-/*}*/
-/*a:nth-child(2) {*/
-/*    width: 110px;*/
-/*}*/
-/*a:nth-child(3) {*/
-/*    width: 100px;*/
-/*}*/
-/*a:nth-child(4) {*/
-/*    width: 160px;*/
-/*}*/
-/*a:nth-child(5) {*/
-/*    width: 120px;*/
-/*}*/
-/*nav .start-home, a:nth-child(1):hover~.animation {*/
-/*    width: 100px;*/
-/*    left: 0;*/
-/*    background-color: #1abc9c;*/
-/*}*/
-/*nav .start-about, a:nth-child(2):hover~.animation {*/
-/*    width: 110px;*/
-/*    left: 100px;*/
-/*    background-color: #e74c3c;*/
-/*}*/
-/*nav .start-blog, a:nth-child(3):hover~.animation {*/
-/*    width: 100px;*/
-/*    left: 210px;*/
-/*    background-color: #3498db;*/
-/*}*/
-/*nav .start-portefolio, a:nth-child(4):hover~.animation {*/
-/*    width: 160px;*/
-/*    left: 310px;*/
-/*    background-color: #9b59b6;*/
-/*}*/
-/*nav .start-contact, a:nth-child(5):hover~.animation {*/
-/*    width: 120px;*/
-/*    left: 470px;*/
-/*    background-color: #e67e22;*/
-/*}*/
-
-/*body {*/
-/*    font-size: 12px;*/
-/*    font-family: sans-serif;*/
-/*    background: #2c3e50;*/
-/*}*/
-/*h1 {*/
-/*    text-align: center;*/
-/*    margin: 40px 0 40px;*/
-/*    text-align: center;*/
-/*    font-size: 30px;*/
-/*    color: #ecf0f1;*/
-/*    text-shadow: 2px 2px 4px #000000;*/
-/*    font-family: 'Cherry Swash', cursive;*/
-/*}*/
-
-/*p {*/
-/*    position: absolute;*/
-/*    bottom: 20px;*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    color: #ecf0f1;*/
-/*    font-family: 'Cherry Swash',cursive;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*span {*/
-/*    color: #2BD6B4;*/
-/*}*/
-=======
-}
->>>>>>> 67fa5cc6d20709e65e94bb0a77f245f04820d3bf
+/*>>>>>>> 67fa5cc6d20709e65e94bb0a77f245f04820d3bf*/
