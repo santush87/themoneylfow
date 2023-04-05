@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/users")
 public class AddSpendingController {
 
-    @GetMapping("add")
+    @GetMapping("/add")
     public String getAdd(){
         return "add";
+    }
+
+    @GetMapping("/a")
+    public String getA(){
+        return "index";
     }
 }
