@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<span th:replace="~{fragments/head}"></span>
+
+<th:block th:insert="~{fragments/head}"></th:block>
+
 
 <body class="index-body">
-<h1>ABOUT</h1>
+<th:block th:insert="~{fragments/navigation}"></th:block>
+
+
+<div class="container-fluid">
+    <h5 class="text-center footer text-dark mt-5">About</h5>
+</div>
+
+<th:block th:insert="~{/fragments/footer}"></th:block>
+
 </body>
 </html>

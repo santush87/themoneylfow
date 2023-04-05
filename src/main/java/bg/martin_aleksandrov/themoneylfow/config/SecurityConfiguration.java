@@ -30,7 +30,7 @@ public class SecurityConfiguration {
                         requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll().
 //                requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll().
                 // the URL-s below are available for all users - logged in and anonymous
-                        requestMatchers("/", "/users/login", "/users/register", "/users/login-error").permitAll().
+                        requestMatchers("/", "/about", "/users/login", "/users/register", "/users/login-error").permitAll().
                 // allow just for admins
                         requestMatchers("/admin").hasRole(UserRoleEnum.ADMIN.name()).
                 anyRequest().authenticated().
